@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script>
+  
+  <header>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+
+  <main>
+    <form id="survey-form">
+      <fieldset>
+        <div>
+          <label id="name-label" for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div>
+          <label id="email-label" for="email">Email</label><br>
+          <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+        </div>
+
+        <div>
+          <label id="number-label" for="number">Age (optional)<label><br>
+              <input type="number" id="number" name="number" min="18" max="117" placeholder="Age">
+        </div>
+
+        <div>
+          <label for="dropdown">Which option best describes your current role?</label><br>
+          <select id="dropdown" name="dropdown">
+            <option value="student">Student</option>
+            <option value="fullTimeJob">Full Time Job</option>
+            <option value="fullTimeLearner">Full Time Learner</option>
+            <option value="preferNotToSay">Prefer Not To Say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <input type="radio" id="definetly" name="recommend" value="definetly">
+          <label for="definetly">Definetly</label><br>
+          <input type="radio" id="maybe" name="recommend" value="definetly">
+          <label for="maybe">Maybe</label><br>
+          <input type="radio" id="notSure" name="recommend" value="notSure">
+          <label for="notSure">Not Sure</label>
+        </div>
+
+        <div>
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <input type="checkbox" id="frontEndProjects" name="improved" value="frontEndProjects">
+          <label for="frontEndProjects">Front-End Projects</label>
+          <input type="checkbox" id="backEndProjects" name="improved" value="backEndProjects">
+          <label for="backEndProjects">Back-End Projects</label>
+        </div>
+
+        <div>
+          <p>Any comments or suggestions?</p>
+          <label for="feedback"></label>
+          <textarea id="feedback" name="feedback" rows="5" cols="50"></textarea>
+        </div>
+
+        <div>
+          <input id="submit" type="submit" value="Submit">
+        </div>
+
+      </fieldset>
+    </form>
+  </main>
+  
+</body>
+</html>
